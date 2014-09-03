@@ -1,5 +1,11 @@
 @mixin mobile{
-  @media screen and (max-width: 700px){
+  @media screen and (max-width: 360px){
+    @content;
+  }
+}
+
+@mixin tablet{
+  @media screen and (max-width: 720px){
     @content;
   }
 }
@@ -26,6 +32,9 @@ h1{
   position: relative;
   padding-left: 280px;
   @include mobile(){
+    font-size: 3.6em;
+  }
+  @include tablet(){
     padding-left: 0;
   }
   small{
