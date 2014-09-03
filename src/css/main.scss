@@ -44,7 +44,7 @@ h1{
     bottom: 5px;
     right: 0;
     font-size: 0.3em;
-    @include mobile(){
+    @include tablet(){
       position: relative;
     }
   }
