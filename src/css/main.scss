@@ -1,3 +1,5 @@
+@import 'font';
+
 @mixin mobile{
   @media screen and (max-width: 360px){
     @content;
@@ -24,7 +26,6 @@ header{
   color: white;
   padding-top: 20px;
 }
-
 
 h1{
   font-size: 4em;
@@ -82,4 +83,22 @@ footer{
 a.thumbnail{
   background: #E6F0E5;
   text-decoration: none;
+}
+
+.error-page{
+  background: url('/img/icewall.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding-top: 20px;
+  a {
+    color: white;
+  }
+  h2{
+    font-size: 3em;
+    padding-top: 40px;
+  }
+  .fluff{
+    font-style: italic;
+  }
 }
